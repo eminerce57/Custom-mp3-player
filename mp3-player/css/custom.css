@@ -1,9 +1,92 @@
 .center{
-
-max-width: 25rem;
+max-width: 23rem;
 margin: auto;
 margin-top: 10%;
-height: 27rem;
+height: 25rem;
 border-radius: 1rem !important;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+font-family: "Bitter", serif;
+}
+.banner{
+width: 100%;
+border-radius: 2rem;
+margin-top: -85px;
+height: 200px;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.banner-div{
+
+width: 100%;
+height: min-content;
+
+padding: 20px;
+}
+.body{
+padding: 10px;
+}
+.buttons span{
+color: #95a5a6;
+font-size: 30px;
+cursor: pointer;
+margin-left: 5px;
+margin-right: 5px;
+
+
+
+}
+.icon{
+
+
+margin-top: 20px;
+}
+
+.title{
+    font-weight:900;
+    color: #6c7272;
+    letter-spacing: 1px;
+    font-size: 18px;
+    
+}
+.content{
+margin-top: 30px;
+
+
+}
+.music{
+font-size: 16px;
+ color:   #95a5a6;
+
+}
+.music-bar{
+width: 100%;
+background-color: #95a5a6;
+border-radius: 20px;
+height: 6px;
+max-height: 8px;
+
+}
+.music-bar-width{
+
+border-radius: 20px;
+    background-color: #7f8c8d;
+    height: 100%;
+    width: 10%;
+
+}
+
+.static-time{
+
+line-height: 0;
+margin-left: 90%;
+color: #95a5a6 ;
+font-weight: 900;
+font-size: 19px;
+}
+.time{
+
+line-height:1;
+color: #95a5a6 ;
+font-weight: 600;
+font-size: 17px;
+
 }
