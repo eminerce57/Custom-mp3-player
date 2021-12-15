@@ -1,46 +1,29 @@
-$(".container").each(function () {
+function play() {
+  var audio = $("#music");
 
- 
-    
+  $("#play").toggleClass("feather-play-circle");
+  if (audio[0].paused) {
+    audio[0].play();
 
-// if ($video_container.parents(".video-header").length) {
-    //   $video_container.parents(".video-header").addClass("playing");
-   
-})
-
-
-function play(){
-var audio = $("#music")
-    $("#play").toggleClass("feather-play-circle")
-
-
- 
-    if (audio[0].paused) {
-        audio[0].play();
-      
-  updatebar();
-      
-      } else {
-        audio[0].pause();
-
-        var audio = $("#music")
-        var time = audio.currentTime;
-        console.log(time)
-      }
- 
-}
-
-    
-function updatebar(x) {
-  $position = x - $progress.offset().left;
-  $percentage = (100 * $position) / $progress_bar.width();
-  if ($percentage > 100) {
-    $percentage = 100;
+    time();
+  } else {
+    audio[0].pause();
   }
-  if ($percentage < 0) {
-    $percentage = 0;
-  }
-  $progress.css("width", $percentage + "%");
-  $video[0].currentTime = ($video[0].duration * $percentage) / 100;
 }
+function time() {
 
+  var audio_time = document.getElementById("music");
+  var time_split = audio_time.currentTime;
+  var time = time_split.toString().split(".", 1);
+  const time1 = time.map(Number);
+
+
+
+
+time1.forEach(function (e) {
+
+    console.log(e);
+    $(".music-bar-width").css("width", e,"%")
+});
+
+}
